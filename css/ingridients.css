@@ -1,12 +1,32 @@
 .ingridients {
+  padding-top: 120px;
 }
 .ingridients-title {
 }
 .ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.ingridients-item:nth-child(2n) {
+  border: 1px solid #fd9222;
+  background: #fff;
+}
+.ingridients-item:nth-child(4n + 1) {
+  color: #fff;
+  background: #fd9222;
+}
+.ingridients-item:nth-child(4n + 3) {
+  color: #fff;
+  background: #1e1823;
 }
 .ingridients-item {
+  border-radius: 15px;
+  padding: 28px 24px;
+  width: calc((100% - 32px * 3) / 4);
 }
 .ingridients-ill {
+  margin-bottom: 36px;
 }
 .ingridients-caption {
   font-size: inherit;
