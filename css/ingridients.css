@@ -21,10 +21,33 @@
   background: #1e1823;
 }
 .ingridients-item {
+  position: relative;
   border-radius: 15px;
   padding: 28px 24px;
   width: calc((100% - 32px * 3) / 4);
 }
+
+.ingredients-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.ingridients-item:nth-child(2n) .ingridients-icon {
+  color: #fd9222;
+}
+
+.ingridients-item:nth-child(2n + 1) .ingridients-icon {
+  color: #fff;
+}
+
 .ingridients-ill {
   margin-bottom: 36px;
 }
